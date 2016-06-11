@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+	<script src="js/ng-cordova.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/camera.js"></script>
+  </head>
+  <body ng-app="camera">
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Camera</h1>
+		<a class="button button-outline" href="index.html#/page1/page2" style="float:right">Back</a>
+      </ion-header-bar>
+      <ion-content ng-controller="ExampleController">
+    <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}">
+		<img ng-show="imgURI === undefined" ng-src="http://placehold.it/300x300">
+		<div class="spacer" style="width: 283px; height: 12px;"></div>
+		<a class="button" ng-click="takePicture()">Take Picture</a>
+		<div class="spacer" style="width: 283px; height: 12px;"></div>
+		<a href="barcode.html" class="button">Do a Barcode Scan</a>
+	  </ion-content>
+  </body>
+</html>
