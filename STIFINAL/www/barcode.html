@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+	<script src="js/ng-cordova.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/barcode.js"></script>
+  </head>
+  <body ng-app="barcode">
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Barcode Scanner</h1>
+		<a class="button button-outline" href="camera.html" style="float:right">Back</a>
+      </ion-header-bar>
+      <ion-content ng-controller="ExampleController">
+		<a class="button" ng-click="scanBarcode()">Scan</a>
+      </ion-content>
+  </body>
+</html>

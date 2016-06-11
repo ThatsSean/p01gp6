@@ -1,0 +1,16 @@
+<ion-view title="Quiz" hide-back-button="true" id="page9" class=" ">
+    <ion-content padding="true" class="has-header">
+        <p id="quiz20-markdown4" style="color:#000000;font-size:20px;text-align:justify;" class=" ">Q20: After how many hours of gaming should you take a pause?</p>
+        <div class="spacer" style="width: 283px; height: 16px;"></div>
+        <form id="quiz20-form7" class="list ">
+            <ion-item class="range range-positive " id="quiz20-range3">
+				<input type="range" name="hours" min="0" max="24" value="{{slider.rangeValue}}" ng-model="slider.rangeValue">
+            </ion-item>
+            <div class="item item-divider">
+              Answer : {{slider.rangeValue}} Hours
+            </div>
+        </form>
+        <div class="spacer" style="width: 283px; height: 16px;"></div>
+        <button class=" button button-positive  button-block " ng-click="showPopup()">Submit!</button>
+    </ion-content>
+</ion-view>
